@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>hz.spring</groupId>
+        <groupId>com.github.HaolinZhong</groupId>
         <artifactId>brewery-bom</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>main</version>
     </parent>
 
     <groupId>hz.spring</groupId>
@@ -14,5 +14,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>brewery-service</name>
     <description>microservice for brewery distribution</description>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
 </project>
