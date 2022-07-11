@@ -2,8 +2,8 @@ package hz.spring.breweryservice.service.brewing;
 
 import hz.spring.breweryservice.config.JmsConfig;
 import hz.spring.breweryservice.domain.Beer;
-import hz.spring.breweryservice.event.BrewBeerEvent;
-import hz.spring.breweryservice.event.NewInventoryEvent;
+import hz.spring.common.event.BrewBeerEvent;
+import hz.spring.common.event.NewInventoryEvent;
 import hz.spring.breweryservice.repository.BeerRepository;
 import hz.spring.breweryservice.web.model.BeerDTO;
 import lombok.RequiredArgsConstructor;

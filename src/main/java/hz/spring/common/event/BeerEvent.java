@@ -1,4 +1,4 @@
-package hz.spring.breweryservice.event;
+package hz.spring.common.event;
 
 import hz.spring.breweryservice.web.model.BeerDTO;
 import lombok.*;

@@ -2,7 +2,7 @@ package hz.spring.breweryservice.service.brewing;
 
 import hz.spring.breweryservice.config.JmsConfig;
 import hz.spring.breweryservice.domain.Beer;
-import hz.spring.breweryservice.event.BrewBeerEvent;
+import hz.spring.common.event.BrewBeerEvent;
 import hz.spring.breweryservice.repository.BeerRepository;
 import hz.spring.breweryservice.service.inventory.BeerInventoryService;
 import hz.spring.breweryservice.web.mappers.BeerMapper;
@@ -31,8 +31,8 @@ public class BrewingService {
         beers.forEach(beer -> {
             Integer QOH = beerInventoryService.getOnhandInventory(beer.getId());
 
-            log.debug("Min on hand is " + beer.getMinOnHand());
-            log.debug("Inventory QOH is " + QOH);
+//            log.debug("Min on hand is " + beer.getMinOnHand());
+//            log.debug("Inventory QOH is " + QOH);
 
             if (beer.getMinOnHand() > QOH) {
                 jmsTemplate.convertAndSend(JmsConfig.BREWING_REQUEST_QUEUE, new BrewBeerEvent(beerMapper.BeerToBeerDTO(beer)));
