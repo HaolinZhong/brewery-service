@@ -1,4 +1,4 @@
-package hz.spring.breweryservice.service;
+package hz.spring.breweryservice.service.brewing;
 
 import hz.spring.breweryservice.config.JmsConfig;
 import hz.spring.breweryservice.domain.Beer;
