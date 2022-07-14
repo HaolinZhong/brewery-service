@@ -1,9 +1,9 @@
 package hz.spring.breweryservice.web.controller;
 
 import hz.spring.breweryservice.service.BeerService;
-import hz.spring.breweryservice.web.model.BeerDTO;
-import hz.spring.breweryservice.web.model.BeerPagedList;
-import hz.spring.breweryservice.web.model.BeerStyleEnum;
+import hz.spring.common.model.BeerDTO;
+import hz.spring.common.model.BeerPagedList;
+import hz.spring.common.model.BeerStyleEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;

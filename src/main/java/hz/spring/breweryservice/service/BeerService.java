@@ -1,8 +1,8 @@
 package hz.spring.breweryservice.service;
 
-import hz.spring.breweryservice.web.model.BeerDTO;
-import hz.spring.breweryservice.web.model.BeerPagedList;
-import hz.spring.breweryservice.web.model.BeerStyleEnum;
+import hz.spring.common.model.BeerDTO;
+import hz.spring.common.model.BeerPagedList;
+import hz.spring.common.model.BeerStyleEnum;
 import org.springframework.data.domain.PageRequest;
 
 import java.util.UUID;

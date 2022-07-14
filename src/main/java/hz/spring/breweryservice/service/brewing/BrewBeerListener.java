@@ -5,7 +5,7 @@ import hz.spring.breweryservice.domain.Beer;
 import hz.spring.common.event.BrewBeerEvent;
 import hz.spring.common.event.NewInventoryEvent;
 import hz.spring.breweryservice.repository.BeerRepository;
-import hz.spring.breweryservice.web.model.BeerDTO;
+import hz.spring.common.model.BeerDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;

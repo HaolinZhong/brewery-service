@@ -1,7 +1,7 @@
 package hz.spring.breweryservice.repository;
 
 import hz.spring.breweryservice.domain.Beer;
-import hz.spring.breweryservice.web.model.BeerStyleEnum;
+import hz.spring.common.model.BeerStyleEnum;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

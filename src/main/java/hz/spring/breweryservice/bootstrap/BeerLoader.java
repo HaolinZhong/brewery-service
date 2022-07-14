@@ -2,13 +2,12 @@ package hz.spring.breweryservice.bootstrap;
 
 import hz.spring.breweryservice.domain.Beer;
 import hz.spring.breweryservice.repository.BeerRepository;
-import hz.spring.breweryservice.web.model.BeerStyleEnum;
+import hz.spring.common.model.BeerStyleEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
-import java.util.UUID;
 
 @RequiredArgsConstructor
 @Component

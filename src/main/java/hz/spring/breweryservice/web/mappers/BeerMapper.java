@@ -1,7 +1,7 @@
 package hz.spring.breweryservice.web.mappers;
 
 import hz.spring.breweryservice.domain.Beer;
-import hz.spring.breweryservice.web.model.BeerDTO;
+import hz.spring.common.model.BeerDTO;
 import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 

@@ -1,6 +1,6 @@
 package hz.spring.common.event;
 
-import hz.spring.breweryservice.web.model.BeerDTO;
+import hz.spring.common.model.BeerDTO;
 import lombok.*;
 
 import java.io.Serializable;

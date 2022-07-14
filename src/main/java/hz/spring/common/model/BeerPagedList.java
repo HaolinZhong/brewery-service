@@ -1,4 +1,4 @@
-package hz.spring.breweryservice.web.model;
+package hz.spring.common.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

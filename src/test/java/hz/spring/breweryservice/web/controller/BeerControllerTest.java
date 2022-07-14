@@ -3,8 +3,8 @@ package hz.spring.breweryservice.web.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import hz.spring.breweryservice.bootstrap.BeerLoader;
 import hz.spring.breweryservice.service.BeerService;
-import hz.spring.breweryservice.web.model.BeerDTO;
-import hz.spring.breweryservice.web.model.BeerStyleEnum;
+import hz.spring.common.model.BeerDTO;
+import hz.spring.common.model.BeerStyleEnum;
 import org.junit.jupiter.api.Test;
 
 

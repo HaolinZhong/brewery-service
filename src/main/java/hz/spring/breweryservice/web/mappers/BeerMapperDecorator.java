@@ -2,7 +2,7 @@ package hz.spring.breweryservice.web.mappers;
 
 import hz.spring.breweryservice.domain.Beer;
 import hz.spring.breweryservice.service.inventory.BeerInventoryService;
-import hz.spring.breweryservice.web.model.BeerDTO;
+import hz.spring.common.model.BeerDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public abstract class BeerMapperDecorator implements BeerMapper {
