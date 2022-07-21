@@ -8,12 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
-import java.util.UUID;
 
-@FeignClient(name = "brewery-inventory-service", fallback = InventoryServiceFeignClientFailover.class)
-public interface InventoryServiceFeignClient {
+@FeignClient(name = "brewery-inventory-failover")
+public interface InventoryFailoverFeignClient {
 
-    @RequestMapping(method = RequestMethod.GET, value = BeerInventoryServiceRestTemplateImpl.INVENTORY_PATH)
-    ResponseEntity<List<BeerInventoryDTO>> getOnhandInventory(@PathVariable UUID beerId);
-
+    @RequestMapping(method = RequestMethod.GET, value = "/inventory-failover")
+    ResponseEntity<List<BeerInventoryDTO>> getOnhandInventory();
 }
