@@ -18,7 +18,7 @@ import java.util.UUID;
 
 @Profile("!local-discovery")
 @Slf4j
-@ConfigurationProperties(prefix = "hz.spring", ignoreUnknownFields = false)
+@ConfigurationProperties(prefix = "hz.spring", ignoreUnknownFields = true)
 @Component
 public class BeerInventoryServiceRestTemplateImpl implements BeerInventoryService {
     public static final String INVENTORY_PATH = "/api/v1/beer/{beerId}/inventory";
