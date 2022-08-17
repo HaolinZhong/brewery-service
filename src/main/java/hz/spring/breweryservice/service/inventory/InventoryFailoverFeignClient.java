@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@FeignClient(name = "brewery-inventory-failover")
+@FeignClient(name = "inventory-failover")
 public interface InventoryFailoverFeignClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/inventory-failover")
