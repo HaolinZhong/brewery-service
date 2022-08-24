@@ -10,8 +10,8 @@ public class FeignClientConfig {
 
     @Bean
     public BasicAuthRequestInterceptor basicAuthRequestInterceptor(
-            @Value("hz.spring.inventoryUser") String inventoryUser,
-            @Value("hz.spring.inventoryPassword") String inventoryPassword) {
+            @Value("${hz.spring.inventoryUser}") String inventoryUser,
+            @Value("${hz.spring.inventoryPassword}") String inventoryPassword) {
         return new BasicAuthRequestInterceptor(inventoryUser, inventoryPassword);
     }
 }
